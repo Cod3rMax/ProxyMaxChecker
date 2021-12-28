@@ -17,5 +17,12 @@
             "email": "dzxxxw@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Codermax\\Proxymaxchecker\\ProxymaxcheckerServiceProvider"
+            ]
+        }
+    }
 }
