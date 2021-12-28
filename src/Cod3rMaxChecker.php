@@ -2,6 +2,8 @@
 
 namespace Codermax\Proxymaxchecker;
 
+use Codermax\Proxymaxchecker\Helper\ConvertProtocolString;
+
 class Cod3rMaxChecker
 {
 
@@ -35,7 +37,7 @@ class Cod3rMaxChecker
 
                 'Expression_Status' => True,
                 'Status' => 'LIVE',
-                'Protocol' => $Protocol,
+                'Protocol' => ConvertProtocolString::ConvertProtocol($Protocol),
                 'HTTP_Code' => $httpCode,
                 'Blacklist' => $checkBlackList[1][0] === 'danger' ? 'BLACKLISTED' : 'CLEAN',
 
@@ -46,7 +48,7 @@ class Cod3rMaxChecker
 
                 'Expression_Status' => False,
                 'Status' => 'DEAD',
-                'Protocol' => $Protocol,
+                'Protocol' => ConvertProtocolString::ConvertProtocol($Protocol),
                 'HTTP_Code' => 0,
                 'Blacklist' => 'N/A',
 

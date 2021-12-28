@@ -28,7 +28,7 @@ return $Cod3rMax->HTTP('121.139.218.165:31409');
 {
   "Expression_Status": true,
   "Status": "LIVE",
-  "Protocol": "CURLPROXY_HTTP",
+  "Protocol": "HTTP",
   "HTTP_Code": 200,
   "Blacklist": "BLACKLISTED"
 }
@@ -41,7 +41,7 @@ return $Cod3rMax->HTTP('121.139.218.165:31409');
 {
   "Expression_Status": false,
   "Status": "DEAD",
-  "Protocol": "CURLPROXY_HTTP",
+  "Protocol": "HTTP",
   "HTTP_Code": 0,
   "Blacklist": "N/A"
 }
