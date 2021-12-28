@@ -1,0 +1,21 @@
+{
+    "name": "codermax/proxymaxchecker",
+    "description": "Proxy checker (ProxyProMax.com) check proxy ProxyIP:Port",
+    "type": "library",
+    "require": {
+        "torann/geoip": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codermax\\Proxymaxchecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cod3rMax",
+            "email": "dzxxxw@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
