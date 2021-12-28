@@ -88,7 +88,7 @@ class Cod3rMaxChecker
 
     public function GetProxyDetails($ProxyIP)
     {
-        return response()->json(geoip($ProxyIP)->toArray(), 200)->getData();
+        return response()->json(geoip(explode(':', $ProxyIP)[0])->toArray(), 200)->getData();
     }
 
 
